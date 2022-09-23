@@ -1,0 +1,132 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   transition: all .5s ease-out;
+}
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100vw;
+   height: 100vh;
+   position: relative;
+}
+
+#btn {
+   position: absolute;
+   top: 50px;
+   right: 60px;
+   width: fit-content;
+   height: fit-content;
+}
+
+#btn i {
+   font-size: 30px;
+   color: gold;
+   opacity: 0.2;
+   text-shadow: 1px 1px 20px gold;
+   cursor: pointer;
+}
+
+#btn i:hover {
+   opacity: 1;
+}
+
+#clock {
+   width: 330px;
+   height: 330px;
+   border-radius: 50%;
+   position: relative;
+}
+
+#clock .circle {
+   display: inline-block;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+}
+
+#clock #c1 {
+   width: 210px;
+   height: 210px;
+}
+
+#clock #c2 {
+   width: 120px;
+   height: 120px;
+}
+
+#clock #c3 {
+   width: 15px;
+   height: 15px;
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+#clock .stick {
+   border-radius: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform-origin: 50% 90%;
+   transition: none;
+}
+
+#clock #h {
+   width: 5px;
+   height: 80px;
+   background-color: aqua;
+}
+
+#clock #m {
+   width: 3px;
+   height: 100px;
+   background-color: tomato;
+}
+
+#clock #s {
+   width: 2px;
+   height: 110px;
+   background-color: gold;
+}
+
+#clock #numBox .number {
+   width: fit-content;
+   height: 150px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform-origin: bottom;
+}
+
+#clock #numBox .number span {
+   display: inline-block;
+   font-family: 'Lobster', cursive;
+   font-size: 30px;
+}
+
+
+
+/*   these clases for JS - day/night mode toggle */
+
+.clockDay {
+   background-color: #fff;
+   color: rgba(0, 0, 0, 0.25);
+   border: 10px solid #fff;
+   box-shadow: 0 0 25px rgb(156, 156, 156),
+      0 0 10px rgb(168, 168, 168) inset;
+}
+
+.clockNight {
+   background-color: #0b1b23;
+   color: rgb(255, 255, 255, 0.15);
+   border: 10px solid #0b1b23;
+   box-shadow: 0 0 25px rgb(0, 1, 12),
+   0 0 10px #000 inset;
+}
